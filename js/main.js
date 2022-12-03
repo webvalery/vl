@@ -2,9 +2,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 ScrollSmoother.create({
   wrapper: '.gsap-wrapper',
   content: '.gsap-content',
-  smooth: 2.3,               
-  effects: true,           
-  smoothTouch: 0.1,       
+  smooth: 0.45,      
 });
 
 const cursor = document.getElementById('cursor'),
