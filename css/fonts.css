@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "BeatrixAntiqua";
+  src: url("../fonts/BeatrixAntiqua-SemiBold.eot"),
+      url("../fonts/BeatrixAntiqua-SemiBold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/BeatrixAntiqua-SemiBold.woff2") format("woff2"),
+      url("../fonts/BeatrixAntiqua-SemiBold.woff") format("woff"),
+      url("../fonts/BeatrixAntiqua-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeatrixAntiquaItalic";
+  src: url("../fonts/BeatrixAntiqua-SemiBoldItalic.eot"),
+      url("../fonts/BeatrixAntiqua-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/BeatrixAntiqua-SemiBoldItalic.woff2") format("woff2"),
+      url("../fonts/BeatrixAntiqua-SemiBoldItalic.woff") format("woff"),
+      url("../fonts/BeatrixAntiqua-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
