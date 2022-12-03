@@ -511,7 +511,7 @@ if (mapRender) {
     },
     {
       iconLayout: 'default#image',
-      iconImageHref: '/img/placemark.png',
+      iconImageHref: 'img/placemark.png',
       iconImageSize: [70, 70],
       iconImageOffset: [-100, -70],
       hideIconOnBalloonOpen: false,
