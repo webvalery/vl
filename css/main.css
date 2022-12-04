@@ -11,16 +11,6 @@
 	box-sizing: border-box;
 }
 
-:focus,
-:active {
-	/*outline: none;*/
-}
-
-a:focus,
-a:active {
-	/* outline: none;*/
-}
-
 /* Links */
 
 a, a:link, a:visited  {
@@ -180,6 +170,87 @@ body.blocked {
 	padding: 0 15px;
 }
 
+
+/* Меню */
+.menu-mobile-btn-wrap {
+	position: absolute;
+	z-index: 10;
+	width: 100px;
+	height: 100px;
+	top: 0;
+	left: 50%;
+	border-radius: 100%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #685858;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;	
+	display: none;
+}
+
+.menu-mobile-btn {
+	font-weight: 200;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.mobile-menu-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+	transition: 0.5s all;	
+
+	opacity: 0;
+	pointer-events: none;
+}
+
+.mobile-menu-bg.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.mobile-menu {
+	position: absolute;
+	width: 80%;
+	height: 100%;
+  top: 0%;
+  left: 0;
+  background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: 0.5s all;	
+	padding: 50px 20px;
+	transform: translateX(-100%);
+}
+
+.mobile-menu.active {
+	transform: translateX(0);
+}
+
+.mobile-menu__close {
+	position: absolute;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	right: 0;
+	top: 20px;
+	transform: translateX(100%);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	color: #000;
+}
 /* Модальное окно обратной связи */
 .popup-back-call-bg {
   position: fixed;
@@ -300,8 +371,8 @@ body.blocked {
 	padding: 50px 15px;
 }
 
-.popup-service__body {
-}
+/* .popup-service__body {
+} */
 
 .popup-service__prev-btn {
 	text-transform: uppercase;
@@ -413,6 +484,21 @@ body.blocked {
 	#aura,
 	#cursor {
 		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.menu-mobile-btn-wrap {
+		display: flex;
+	}
+}
+
+@media (max-width: 600px) {
+	.popup-back-call.active {
+		width: 80%;
+	}
+	.call-form {
+		max-width: none;
 	}
 }
 

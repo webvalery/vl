@@ -531,7 +531,7 @@
 }
 
 /* Слайдер apparatus */
-.apparatus-slider {}
+/* .apparatus-slider {} */
 
 .apparatus-slider .swiper-button-next,
 .apparatus-slider .swiper-button-prev {
@@ -1054,8 +1054,8 @@
   text-align: center;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#e3d3b6, #bb8d37);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
+  -webkit-background-clip: text;
 }
 
 .recom__leaf-left {
@@ -1153,10 +1153,6 @@
 }
 
 /* Секция map */
-
-.map {
-  /* max-height: 600px; */
-}
 
 .map__container-width {
   max-width: 2100px;
@@ -1305,8 +1301,8 @@
   padding-bottom: 20px;
 }
 
-.footer__nav-item {
-}
+/* .footer__nav-item {
+} */
 
 .footer__nav-item:not(:last-child) {
   margin-right: 30px;
@@ -1553,7 +1549,7 @@
 
 @media (max-height: 700px) {
   .map__render {
-    height: 450px;
+    height: 350px;
   }
 }
 /* Анимации */

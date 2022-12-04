@@ -48,6 +48,25 @@ document.querySelector('body').addEventListener('mouseout', (event) => {
   follower.classList.add('hidden');
 });
 
+// Мобильное меню
+const mobileMenuBg = document.querySelector('.mobile-menu-bg');
+if(mobileMenuBg) {
+  let mobileMenu = mobileMenuBg.querySelector('.mobile-menu'); 
+  let menuMobileBtn = document.querySelector('.menu-mobile-btn-wrap');
+  let mobileMenuClose = mobileMenuBg.querySelector('.mobile-menu__close');
+
+  menuMobileBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    mobileMenuBg.classList.add('active');
+    mobileMenu.classList.add('active');
+  });
+
+  mobileMenuClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    mobileMenuBg.classList.remove('active');
+    mobileMenu.classList.remove('active');
+  });
+}
 // Услуги
 const body = document.querySelector('body');
 const servicesList = document.querySelector('.services__list');
