@@ -148,6 +148,10 @@ html {
 	/* cursor: none; */
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body.blocked {
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -171,7 +175,7 @@ body.blocked {
 }
 
 
-/* Меню */
+/* Мобильное меню */
 .menu-mobile-btn-wrap {
 	position: absolute;
 	z-index: 10;
@@ -220,7 +224,7 @@ body.blocked {
 	height: 100%;
   top: 0%;
   left: 0;
-  background: #fff;
+  background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -231,6 +235,18 @@ body.blocked {
 
 .mobile-menu.active {
 	transform: translateX(0);
+}
+
+.mobile-menu::after {
+	content: '';
+	position: absolute;
+	z-index: -5;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 40%;
+	background: url('/img/icons/mobile-menu.svg') no-repeat;
+	background-size: contain;
 }
 
 .mobile-menu__close {
@@ -250,6 +266,84 @@ body.blocked {
 	align-items: center;
 	font-size: 26px;
 	color: #000;
+}
+
+.mobile-menu__content {
+	min-height: 100%;
+	width: 80%;
+	overflow-y: auto;
+}
+
+.mobile-menu__social {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.mobile-menu__link-phone-wrap {
+	width: 100%;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.mobile-menu__link-phone {
+	display: inline-block;
+	position: relative;
+	font-size: 17px;
+	color: #535a64;
+	font-weight: 400;
+	padding-left: 25px;	
+}
+
+.mobile-menu__link-phone::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background: url(../img/icons/tel.svg) no-repeat;
+	background-size: contain;
+}
+
+.mobile-menu__social-link {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+.mobile-menu__social-icon {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.mobile-menu__list {
+	min-height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.mobile-menu__item {
+	-webkit-box-shadow: 2px 4px 3px rgb(187 141 55 / 20%);
+	box-shadow: 2px 4px 3px rgb(187 141 55 / 20%);
+	background: #8d6c6c0d;
+}
+
+.mobile-menu__link {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 16px 0;
+	color: #bb8d37;
+	font-weight: bold;
+}
+.mobile-menu__info {
 }
 /* Модальное окно обратной связи */
 .popup-back-call-bg {

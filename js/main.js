@@ -1,9 +1,9 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-ScrollSmoother.create({
-  wrapper: '.gsap-wrapper',
-  content: '.gsap-content',
-  smooth: 0.45,      
-});
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// ScrollSmoother.create({
+//   wrapper: '.gsap-wrapper',
+//   content: '.gsap-content',
+//   smooth: 0.45,      
+// });
 
 const cursor = document.getElementById('cursor'),
       follower = document.getElementById('aura'),
@@ -35,8 +35,7 @@ gsap.to({}, .01, {
       }
     })
   }
-})
-
+});
 document.querySelector('body').addEventListener('mousemove', (event) => {
   cursor.classList.remove('hidden');
   follower.classList.remove('hidden');
@@ -54,18 +53,30 @@ if(mobileMenuBg) {
   let mobileMenu = mobileMenuBg.querySelector('.mobile-menu'); 
   let menuMobileBtn = document.querySelector('.menu-mobile-btn-wrap');
   let mobileMenuClose = mobileMenuBg.querySelector('.mobile-menu__close');
+  let mobileMenuLinks = mobileMenuBg.querySelectorAll('.mobile-menu__link');
 
   menuMobileBtn.addEventListener('click', (e) => {
     e.preventDefault();
     mobileMenuBg.classList.add('active');
     mobileMenu.classList.add('active');
+    body.classList.add('blocked');
   });
 
   mobileMenuClose.addEventListener('click', (e) => {
     e.preventDefault();
     mobileMenuBg.classList.remove('active');
     mobileMenu.classList.remove('active');
+    body.classList.remove('blocked');
   });
+
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      mobileMenuBg.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      body.classList.remove('blocked');
+    });
+  });
+
 }
 // Услуги
 const body = document.querySelector('body');
