@@ -583,10 +583,15 @@ body.blocked {
 	}
 	
 	.popup-service__info {
+		max-width: 90%;
 		margin-right: 0;
 		margin-bottom: 50px;
 	}
 	
+	.popup-service__demo-wrap {
+		max-width: 90%;
+	}
+
 	.popup-service__title {
 		text-align: center;
 	}
@@ -614,4 +619,16 @@ body.blocked {
 	}
 }
 
-
+@media (max-width: 400px) {
+	.popup-service__title {
+		font-size: 35px;
+	}
+	
+	.popup-service__info {
+		max-width: 100%;
+	}
+	
+	.popup-service__demo-wrap {
+		max-width: 100%;
+	}
+}
