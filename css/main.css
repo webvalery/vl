@@ -144,6 +144,8 @@ legend {
 	background-color: rgba(255,255,255, .2);
 	transform: translate(5px, 5px);
 }
+
+
 /*  */
 
 body, 
@@ -407,6 +409,11 @@ body.blocked {
 	cursor: pointer;
 }
 
-
+@media (max-width: 900px) {
+	#aura,
+	#cursor {
+		display: none;
+	}
+}
 
 

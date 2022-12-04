@@ -1449,13 +1449,31 @@
 
 @media (max-width: 600px) {
   /* header */
+  .header__women-wrap {
+    bottom: 72px;
+  }
+
   .apparatus-slider__img-wrap {
     width: 100%;
   }
 
   /* services */
+  .services {
+    background-position: 21% center;
+  }
+
   .services__symbol-btn {
     display: none;
+  }
+
+  .services__info {
+    max-width: 100%;
+  }
+
+  .services__symbol-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
   /*apparatus  */
@@ -1476,6 +1494,37 @@
     display: none;
   }
 
+  /* clinic */
+  .clinic__title {
+    font-size: 32px;
+  }
+
+  /* apparatus */
+  .apparatus__title {
+    font-size: 32px;
+  }
+
+  .apparatus-slider__next,
+  .apparatus-slider__prev {
+    width: 24%;
+  }
+  /* certificate */
+  .certificate__title {
+    font-size: 32px;
+  }
+
+  /* specialists */
+  .specialists__title {
+    font-size: 32px;
+  }
+
+  /* recom */
+  .recom__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
   /* clinic */
   .clinic__title {
     font-size: 24px;
@@ -1502,7 +1551,11 @@
   }
 }
 
-
+@media (max-height: 700px) {
+  .map__render {
+    height: 450px;
+  }
+}
 /* Анимации */
 @-webkit-keyframes pulse {
   0% {
