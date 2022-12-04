@@ -439,6 +439,7 @@ body.blocked {
 /* Модальное окно услуги */
 .popup-service-bg {
 	position: fixed;
+	overflow-y: auto;
   width: 100%;
   height: 100%;
   bottom: -100%;
@@ -574,7 +575,24 @@ body.blocked {
 	cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+	/* Модальное окно услуги */
+	.popup-service__wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.popup-service__info {
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+	
+	.popup-service__title {
+		text-align: center;
+	}
+
 @media (max-width: 900px) {
+	/* Курсор */
 	#aura,
 	#cursor {
 		display: none;
