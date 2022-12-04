@@ -155,7 +155,7 @@
 /* Услуги */
 
 .services {
-  margin-top: -115px;
+  margin-top: -125px;
   padding-top: 160px;
   position: relative;
   z-index: 1;
@@ -163,6 +163,11 @@
   background: url('../img/services.jpg') no-repeat;
   background-size: cover;
   background-position: center;  
+}
+
+.services__container-width {
+  position: relative;
+  z-index: 5;
 }
 
 .services__content {
@@ -207,7 +212,7 @@
 }
 
 .services__list {
-
+  margin-bottom: 200px;
 }
 .services__item {
   position: relative;
@@ -392,11 +397,14 @@
   width: 100%;
   z-index: 1;
   margin-top: -125px;
-  padding-top: 200px;
   padding-bottom: 100px;
   background: url('../img/clinic.png') no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+.clinic__container-width {
+  padding-top: 200px;
 }
 
 .clinic__leaf-center {
@@ -454,7 +462,7 @@
   margin-bottom: 50px;
 }
 
-/* Слайдер галлерии */
+/* Слайдер gallery */
 .gallery-slider .swiper-wrapper {
   margin-bottom: 80px;
 }
@@ -499,7 +507,6 @@
 .gallery-slider .swiper-scrollbar-drag {
   background: rgb(217 194 152 / 67%);
 }
-
 
 /* Секция apparatus */
 .apparatus {
@@ -709,6 +716,8 @@
 }
 
 .certificate__title {
+  position: relative;
+  z-index: 2;
   font-family: "Times New Roman", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -803,7 +812,9 @@
 }
 
 .container-width--specialists {
-  padding: 200px 0 200px 0;
+  position: relative;
+  z-index: 5;
+  padding: 200px 15px 200px 15px;
 }
 
 .specialists__leaf-img1 {
@@ -1316,11 +1327,180 @@
 }
 
 
+/* Слайдер gallery */
+@media (max-width: 650px) {
+  .gallery-slider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Header */
+  .header__women-wrap {
+    width: 46%;
+    left: 0;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  /* apparatus */
+}
 
 
 
+@media (max-width: 900px) {
+  /* apparatus */
+  .apparatus-slider .swiper-slide {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .apparatus-slider__info {
+    max-width: 80%;
+    margin-right: 0;
+  }
+
+  .apparatus-slider__img-wrap {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  .apparatus-slider__img {
+    max-height: 400px;
+  }
 
 
+  /* specialists */
+  .container-width--specialists {
+    padding: 70px 15px 140px 15px;
+  }
+
+  /* recom */
+  .recom__leaf-left {
+    display: none;
+  }
+
+  /* Map */
+  .map-content {
+    flex-direction: column-reverse;
+  }
+  
+  .map__contacts-wrap {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .map__contacts {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .map__logo-wrap {
+    max-width: 400px;
+  }
+
+  .map__render {
+    height: 500px;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  /* Header */
+  .nav-menu {
+    display: none;
+  }
+  
+  .header__info-wrap {
+    justify-content: center;
+    padding: 100px 0px 150px 0;
+  }
+  
+  .header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__info-text {
+    text-align: center;
+  }
+
+  /* services  */
+  .services__leaf-bottom {
+    display: none;
+  }
+
+  /* clinic */
+  .clinic {
+    margin-top: -160px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* header */
+  .apparatus-slider__img-wrap {
+    width: 100%;
+  }
+
+  /* services */
+  .services__symbol-btn {
+    display: none;
+  }
+
+  /*apparatus  */
+  .apparatus-slider__info {
+    max-width: 100%;
+  }
+
+  /* certificate  */
+  .certificate__leaf-img4,
+  .certificate__leaf-img2 {
+    display: none;
+  }  
+}
+
+@media (max-width: 500px) {
+  /* header */
+  .services__leaf-sheet1 {
+    display: none;
+  }
+
+  /* clinic */
+  .clinic__title {
+    font-size: 24px;
+  }
+
+  /* apparatus */
+  .apparatus__title {
+    font-size: 24px;
+  }
+
+  /* certificate */
+  .certificate__title {
+    font-size: 24px;
+  }
+
+  /* specialists */
+  .specialists__title {
+    font-size: 24px;
+  }
+
+  /* recom */
+  .recom__title {
+    font-size: 24px;
+  }
+}
 
 
 /* Анимации */

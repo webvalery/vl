@@ -124,7 +124,26 @@ new Swiper('.gallery-slider', {
     stretch: 50,
     slideShadows: true,
   },
-  
+  breakpoints: {
+    1300: {
+      spaceBetween: 20,
+      slidesPerView: 5,
+    },
+    1000: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 10,
+      }
+    },
+    650: {
+      slidesPerView: 3,
+    },
+    300: {
+      slidesPerView: 1,
+    }
+  },
   // Пагинация
   pagination: {
     el: '.swiper-pagination',
@@ -146,7 +165,7 @@ new Swiper('.gallery-slider', {
   },
   autoHeight: true,
   autoplay: {
-    delay: 1000,
+    delay: 1500,
     disableOnInteraction: false
   },
 });
@@ -173,6 +192,18 @@ new Swiper('.apparatus-slider', {
 // Слайдер certificate
 new Swiper('.certificate-slider', {
   slidesPerView: 3,
+  breakpoints: {
+    800: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    200: {
+      slidesPerView: 1,
+    },
+  },
   spaceBetween: 30,
   autoplay: {
     delay: 2000,
@@ -187,6 +218,18 @@ if(specialistsSliderHtml) {
   const specialistsSlider = new Swiper('.specialists-slider', {
     slidesPerView: 3,
     spaceBetween: 100,
+    breakpoints: {
+      800: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+      500: {
+        slidesPerView: 2,
+      },
+      200: {
+        slidesPerView: 1,
+      },
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -222,6 +265,19 @@ if(recomSliderHtml) {
   const recomSlider = new Swiper('.recom-slider', {
     slidesPerView: 3,
     spaceBetween: 100,
+    breakpoints: {
+      1000: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+      500: {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      },
+      200: {
+        slidesPerView: 1,
+      }
+    },
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -375,7 +431,7 @@ document.addEventListener('scroll', (event) => {
     }
 
     if(isVisibilityServices4) {
-      servicesLeafBottom.style.bottom = -54 + 'px';
+      servicesLeafBottom.style.bottom = -62 + 'px';
       servicesLeafBottom.style.transform = 'scale(0.6)';
     }
 
@@ -526,7 +582,10 @@ if (mapRender) {
     map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
     map.controls.remove('zoomControl'); // удаляем контрол зуммирования
     map.controls.remove('rulerControl'); // удаляем контрол правил
-    // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)    
+
+    if(window.innerWidth < 750) {
+      map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)    
+    }
   }
   ymaps.ready(init);
 }
