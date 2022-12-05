@@ -2,7 +2,7 @@
 // ScrollSmoother.create({
 //   wrapper: '.gsap-wrapper',
 //   content: '.gsap-content',
-//   smooth: 0.45,      
+//   smooth: 1.45,      
 // });
 
 const cursor = document.getElementById('cursor'),

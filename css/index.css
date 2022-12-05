@@ -1490,6 +1490,10 @@
     display: none;
   }
 
+  .header__women-wrap {
+    bottom: 64px;
+  }
+
   /* clinic */
   .clinic__title {
     font-size: 32px;
