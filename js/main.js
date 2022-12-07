@@ -294,14 +294,13 @@ const recomSliderHtml = document.querySelector('.recom-slider');
 if(recomSliderHtml) {
   const recomSlider = new Swiper('.recom-slider', {
     slidesPerView: 3,
-    spaceBetween: 100,
     breakpoints: {
       1000: {
-        spaceBetween: 20,
+        spaceBetween: 90,
         slidesPerView: 3,
       },
       500: {
-        spaceBetween: 10,
+        spaceBetween: 40,
         slidesPerView: 2,
       },
       200: {

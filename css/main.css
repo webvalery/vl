@@ -175,6 +175,7 @@ body.blocked {
 }
 
 
+
 /* Мобильное меню */
 .menu-mobile-btn-wrap {
 	position: absolute;
@@ -595,6 +596,9 @@ body.blocked {
 	.popup-service__title {
 		text-align: center;
 	}
+}
+/* Preloader */
+
 
 @media (max-width: 900px) {
 	/* Курсор */

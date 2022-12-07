@@ -5,7 +5,7 @@
   background: url('../img/header-bg.png') no-repeat;
   background-size: cover;
   background-position: bottom center;
-  padding-bottom: 240px;
+  padding-bottom: 100px;
 }
 
 .header__nav-wrap {
@@ -16,8 +16,8 @@
 
 .nav-menu {
   display: flex;
-  border-top: 2px solid #000;
 }
+
 .nav-menu__item {
   padding: 40px 0;
   list-style: none;
@@ -160,7 +160,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  background: url('../img/services.jpg') no-repeat;
+  background: url('../img/services-new.png') no-repeat;
   background-size: cover;
   background-position: center;  
 }
@@ -398,7 +398,7 @@
   z-index: 1;
   margin-top: -125px;
   padding-bottom: 100px;
-  background: url('../img/clinic.png') no-repeat;
+  background: url('../img/recom.jpg') no-repeat;
   background-size: cover;
   background-position: top;
 }
